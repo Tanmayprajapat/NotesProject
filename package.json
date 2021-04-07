@@ -1,0 +1,24 @@
+{
+  "name": "notesproject",
+  "version": "1.0.0",
+  "description": "Project for RTU notes",
+  "main": "index.html",
+  "scripts": {
+    "start":"npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite":"lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanmayprajapat/NotesProject.git"
+  },
+  "author": "Tanmay Prajapat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanmayprajapat/NotesProject/issues"
+  },
+  "homepage": "https://github.com/Tanmayprajapat/NotesProject#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
