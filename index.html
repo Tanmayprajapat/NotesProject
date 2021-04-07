@@ -89,6 +89,11 @@
 				$('#cyear').focus();
 				return false;
 			}
+			else if (y.val() === "" && b.val() === "CE" || b.val() === "CS" || b.val() === "ECE" || b.val() === "EE" || b.val() === "ME") {
+				alert("Enter value of year");
+				$('#cyear').focus();
+				return false;
+			}
 			else if(y.val() === "1"){
 				window.location.href="1st_year.html";
 			}
