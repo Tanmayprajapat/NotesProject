@@ -1,0 +1,156 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<style type="text/css">
+		html,body{
+				height: 100%;
+				min-width: 360px;min-height: 400px;
+			}
+		.container{
+			height: 60%;
+			
+		}
+		header{
+			height: 20%;
+		}
+		select{
+			width: 335px;
+		}
+		button{
+			font-size: 200%;
+			margin-top: 5%;
+			
+			
+		}
+		label{
+			width:99px;
+		}
+		</style>
+		<body>
+<header class="jumbotron"><h1>Welcome </h1></header>
+<div class="container">
+
+	<div class="row">
+		<div class="col"></div>
+		<form method="post" name="myform" action="#"></form>
+		<div class="col-auto">
+			<label for="cyear">Select year:</label>
+			<select id="cyear" name="year">
+				<option value="">Select..</option>
+				<option value="1">First</option>
+				<option value="2">Second</option>
+				<option value="3">Third</option>
+				<option value="4">Forth</option>
+			</select>
+			<br>
+			<br>
+			<label for="cbranch">Select Branch: </label>
+			<select id="cbranch" name="branch">
+				<option value="">Select..</option>
+				<option value="CS">Computer Science Engineering</option>
+				<option value="ME">Mechanical Engineering</option>
+				<option value="ECE">Electronics and Communication Engineering</option>
+				<option value="EE">Electrical Engineering</option>
+				<option value="CE">Civil Engineering</option>
+			</select>
+		</div>
+		<div class="col"></div>		
+		</div>
+		<div class="row">
+			<div class="col text-center">
+				<button  id="submit" class="btn btn-primary">submit
+				</button>
+			</div>
+		</div>
+		
+		
+
+		
+		
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		</body>
+<script>
+	$(document).ready(function(){
+		$("#submit").click(function() {
+			var y=$('#cyear');
+			var b=$('#cbranch');
+			if (y.val() === "" && b.val() === "") {
+				alert("Enter values of year and branch");
+				$('#cyear').focus();
+				return false;
+			}
+			else if(y.val() === "1"){
+				window.location.href="1st_year.html";
+			}
+			else if(y.val() === "2" && b.val() === "CE") {
+				window.location.href="2nd_year_CE.html";
+			}
+			else if(y.val() === "2" && b.val() === "CS") {
+				window.location.href="2nd_year_CS.html";
+			}
+			else if(y.val() === "2" && b.val() === "ECE") {
+				window.location.href="2nd_year_ECE.html";
+			}
+			else if(y.val() === "2" && b.val() === "EE") {
+				window.location.href="2nd_year_EE.html";
+			}
+			else if(y.val() === "2" && b.val() === "ME") {
+				window.location.href="2nd_year_ME.html";
+			}
+			else if(y.val() === "3" && b.val() === "CE") {
+				window.location.href="3rd_year_CE.html";
+			}
+			else if(y.val() === "3" && b.val() === "CS") {
+				window.location.href="3rd_year_CS.html";
+			}
+			else if(y.val() === "3" && b.val() === "ECE") {
+				window.location.href="3rd_year_ECE.html";
+			}
+			else if(y.val() === "3" && b.val() === "EE") {
+				window.location.href="3rd_year_EE.html";
+			}
+			else if(y.val() === "3" && b.val() === "ME") {
+				window.location.href="3rd_year_ME.html";
+			}
+			else if(y.val() === "4" && b.val() === "CE") {
+				window.location.href="4th_year_CE.html";
+			}
+			else if(y.val() === "4" && b.val() === "CS") {
+				window.location.href="4th_year_CS.html";
+			}
+			else if(y.val() === "4" && b.val() === "ECE") {
+				window.location.href="4th_year_ECE.html";
+			}
+			else if(y.val() === "4" && b.val() === "EE") {
+				window.location.href="4th_year_EE.html";
+			}
+			else if(y.val() === "4" && b.val() === "ME") {
+				window.location.href="4th_year_ME.html";
+			}
+			else if (y.val() === "2" || y.val() === "3" || y.val() === "4" && b.val() === "") {
+				alert("Enter value of branch");
+				$('#cbranch').focus();
+				return false;
+			}
+			else 
+				return;
+		});
+		
+	});
+	
+
+</script>
+
+</head>
+</html>
+
