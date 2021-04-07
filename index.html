@@ -89,11 +89,6 @@
 				$('#cyear').focus();
 				return false;
 			}
-			else if (y.val() === "" && b.val() === "CE" || b.val() === "CS" || b.val() === "ECE" || b.val() === "EE" || b.val() === "ME") {
-				alert("Enter value of year");
-				$('#cyear').focus();
-				return false;
-			}
 			else if(y.val() === "1"){
 				window.location.href="1st_year.html";
 			}
@@ -141,6 +136,11 @@
 			}
 			else if(y.val() === "4" && b.val() === "ME") {
 				window.location.href="4th_year_ME.html";
+			}
+			else if (y.val() === "" && b.val() === "CE" || b.val() === "CS" || b.val() === "ECE" || b.val() === "EE" || b.val() === "ME") {
+				alert("Enter value of year");
+				$('#cyear').focus();
+				return false;
 			}
 			else if (y.val() === "2" || y.val() === "3" || y.val() === "4" && b.val() === "") {
 				alert("Enter value of branch");
