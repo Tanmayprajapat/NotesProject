@@ -88,7 +88,7 @@
 			var y=$('#cyear');
 			var b=$('#cbranch');
 			if (y.val() === "" && b.val() === "") {
-				alert("Enter values of year and branch");
+				alert("Enter year and branch");
 				$('#cyear').focus();
 				return false;
 			}
@@ -141,12 +141,12 @@
 				window.location.href="4th_year_ME.html";
 			}
 			else if (y.val() === "" && b.val() === "CE" || b.val() === "CS" || b.val() === "ECE" || b.val() === "EE" || b.val() === "ME") {
-				alert("Enter value of year");
+				alert("Enter year");
 				$('#cyear').focus();
 				return false;
 			}
 			else if (y.val() === "2" || y.val() === "3" || y.val() === "4" && b.val() === "") {
-				alert("Enter value of branch");
+				alert("Enter branch");
 				$('#cbranch').focus();
 				return false;
 			}
