@@ -1,4 +1,4 @@
-<html>
+	<html>
 
 	<head>
 		<meta charset="utf-8">
@@ -19,13 +19,14 @@
 			height: 20%;
 		}
 		select{
-			width: 335px;
+			
 		}
 		button{
 			font-size: 200%;
 			margin-top: 5%;
-			
-			
+		}
+		.row{
+			padding:20px;
 		}
 		label{
 			width:99px;
@@ -37,21 +38,27 @@
 
 	<div class="row">
 		
-		<div class="col-3"></div>
-		
-		<div class="col-auto col-xl-6">
-			<label for="cyear">Select year:</label>
-			<select id="cyear" name="year">
+		<div class="col-md-2"></div>
+		<div class="col-md-2">
+			<label for="cyear" class="col-form-label">Select year:</label>
+		</div>
+		<div class="col-md-6">
+			<select id="cyear" name="year" class="form-control">
 				<option value="">Select..</option>
 				<option value="1">First</option>
 				<option value="2">Second</option>
 				<option value="3">Third</option>
 				<option value="4">Forth</option>
 			</select>
-			<br>
-			<br>
-			<label for="cbranch">Select Branch:</label>
-			<select id="cbranch" name="branch">
+		</div><div class="col"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-2">
+			<label for="cbranch">Select Branch: </label>
+		</div>
+		<div class="col-md-6">
+			<select id="cbranch" name="branch"  class="form-control">
 				<option value="">Select..</option>
 				<option value="CS">Computer Science Engineering</option>
 				<option value="ME">Mechanical Engineering</option>
@@ -59,17 +66,15 @@
 				<option value="EE">Electrical Engineering</option>
 				<option value="CE">Civil Engineering</option>
 			</select>
-			<div class="col-3"></div>
-		</div>
-		<div class="col"></div>		
-		</div>
+		</div><div class="col"></div>
+			
+	</div>
 		<div class="row">
 			<div class="col text-center">
 				<button  id="submit" class="btn btn-primary">submit
 				</button>
 			</div>
 		</div>
-		
 		
 		
 
@@ -88,7 +93,7 @@
 			var y=$('#cyear');
 			var b=$('#cbranch');
 			if (y.val() === "" && b.val() === "") {
-				alert("Enter year and branch");
+				alert("Select year and branch");
 				$('#cyear').focus();
 				return false;
 			}
@@ -141,12 +146,12 @@
 				window.location.href="4th_year_ME.html";
 			}
 			else if (y.val() === "" && b.val() === "CE" || b.val() === "CS" || b.val() === "ECE" || b.val() === "EE" || b.val() === "ME") {
-				alert("Enter year");
+				alert("Select year");
 				$('#cyear').focus();
 				return false;
 			}
 			else if (y.val() === "2" || y.val() === "3" || y.val() === "4" && b.val() === "") {
-				alert("Enter branch");
+				alert("Select branch");
 				$('#cbranch').focus();
 				return false;
 			}
